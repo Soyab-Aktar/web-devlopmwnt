@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text</title>
+    <!-- This is internal CSS -->
+    <style>
+
+        /* Universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            background-color: aqua;
+        }
+
+        p {
+            width: 80%;
+            background-color: orange;
+        }
+
+        /* ID */
+        #third {
+            background-color: lime;
+            text-align: center;
+            font-size: 80px;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .four {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        /* Class */
+        .ln {
+            background-color: mediumspringgreen;
+        }
+
+        /* combined selectors */
+        .ln,
+        h1 {
+            border: 2px solid black;
+        }
+        /* attribute Selector */
+        input[type="passward"]{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- This is inline CSS -->
+    <h1 style="color: brown;">Learning CSS basics</h1>
+    <p style="background-color: yellow;">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Laborum neque,
+        nemo ex quia, expedita eaque quaerat soluta officiis quisquam recusandae eos, consequatur error voluptates
+        voluptatem quos?<br> Suscipit quas ab soluta.</p>
+
+    <p>This is Internal CSS</p>
+    <p>This is Internal CSS</p>
+    <p id="third">This is Internal CSS</p>
+    <p class="four">This is Internal CSS</p>
+
+    <p class="ln">Learning class</p>
+    <p>Learning class</p>
+    <p>Learning class</p>
+    <p class="ln">Learning class</p>
+
+    <form>
+        <input type="email" placeholder="email" >
+        <input type="password" placeholder="password" >
+    </form>
+</body>
+
+</html>
