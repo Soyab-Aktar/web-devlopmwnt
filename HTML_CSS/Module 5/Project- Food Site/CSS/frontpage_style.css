@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Work Sans", sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#hero {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(0.00deg, rgb(16, 16, 16) -19.5%, rgba(16, 16, 16, 0) 100%), url(/assets/hero-bg.png);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_contain {
+    color: white;
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 15px; */
+}
+
+.top_p {
+    color: rgb(255, 255, 255);
+    font-family: Work Sans;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-family: Work Sans;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 0%;
+    text-align: center;
+    /* padding: 10px 0px 10px 0px; */
+    margin: 10px 0px 20px 0px;
+}
+
+.bottom_p {
+    color: rgb(255, 255, 255);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+button {
+    color: rgb(255, 255, 255);
+    font-family: Work Sans;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: center;
+    width: 22%;
+    height: 50px;
+    padding: 0px 5px;
+
+    border-radius: 8px;
+    background: rgb(82, 195, 3);
+    border: none;
+}
+
+#card {
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.contain {
+    /* margin: 50px 80px; */
+    /* width: 2000px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#outerblock {
+    display: flex;
+    gap: 30px;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+
+}
+
+.innerblock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    width: 420px;
+    margin: 20px 0px;
+}
+
+#brand {
+    color: rgb(16, 16, 16);
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+#sale {
+    color: rgb(0, 0, 0);
+    font-family: Work Sans;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 0%;
+    text-align: center;
+    width: 50%;
+    margin: 0px 0px;
+}
+
+span {
+    background-color: rgba(82, 195, 3, 0.15);
+    color: rgb(16, 16, 16);
+    font-family: Work Sans;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+h2 {
+    color: rgb(16, 16, 16);
+    font-family: Work Sans;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 47px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+#p2 {
+    color: rgb(16, 16, 16);
+    font-family: Work Sans;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+#b3 {
+    color: rgb(255, 255, 255);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+    width: 200px;
+}
+
+#social {
+    height: 660px;
+    width: 100vw;
+    display: flex;
+        /* background-color: black; */
+}
+
+.lastp {
+    /* background-image: url(/assets/foods.png); */
+}
+
+#final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+#lasth {
+    color: rgb(16, 16, 16);
+    font-family: Work Sans;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 10px 50px;
+}
+
+.ph1 {
+    color: rgb(16, 16, 16);
+    font-family: Work Sans;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.ph2 {
+    color: rgba(16, 16, 16, 0.822);
+    font-family: Work Sans;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0%;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.462);
+    width: 957px;
+    padding: 40px 0px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logop {
+    width: 50px;
+}
