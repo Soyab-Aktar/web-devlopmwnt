@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z_Axis</title>
+    <style>
+        img {
+            width: 100px;
+        }
+
+        .contain {
+            position: relative;
+        }
+
+        .box1 {
+            position: relative;
+            z-index: 10;
+        }
+
+        .box2 {
+            position: relative;
+            top: 15px;
+            right: 90px;
+            z-index: 1;
+        }
+
+        .box3 {
+            position: relative;
+            right: 180px;
+            top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Z index</h1>
+    <div class="contain">
+        <img class="box1" src="alchemyrefiner_alchemymagic_0_c8310571-54c2-4394-b763-b4352fa09e24_0.jpg" alt="">
+        <img class="box2" src="Anime_A_20yearold_male_student_sits_at_a_modern_desk_proudly_g_1.jpg" alt="">
+        <img class="box3" src="Graphic_Design_A_20yearold_male_student_sits_at_a_modern_desk_1.jpg" alt="">
+    </div>
+</body>
+
+</html>

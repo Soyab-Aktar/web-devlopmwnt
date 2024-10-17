@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo::</title>
+    <style>
+        h1::after {
+            content: '.pdf';
+            color: red;
+            font-size: small;
+            font-weight: lighter
+        }
+
+        h1::before {
+            content: 'Start: ';
+            color: pink;
+            font-size: small;
+            font-weight: lighter
+        }
+
+        p::first-letter{
+            font-size: 50px;
+        }
+        ::selection{
+            background-color: mediumspringgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Headline- 1</h1>
+    <h1>Headline- 2</h1>
+    <h1>Headline- 3</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sapiente nemo quas est iure quod dolore
+        voluptates mollitia sit iste.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sapiente nemo quas est iure quod dolore
+        voluptates mollitia sit iste.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sapiente nemo quas est iure quod dolore
+        voluptates mollitia sit iste.</p>
+</body>
+
+</html>
