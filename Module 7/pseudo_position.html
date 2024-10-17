@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+    <style>
+        h1 {
+            color: red;
+        }
+
+        /*  Hover Property */
+        h1:hover {
+            color: black;
+        }
+
+        /* Focus property */
+        input:focus {
+            color: red;
+            outline: 0;
+            background-color: yellow;
+        }
+
+        /* Visited property */
+        a:visited {
+
+            color: hotpink;
+        }
+
+        /* Child Property */
+        /* li:last-child{
+            color: red;
+        }
+        li:first-child{
+            background-color: mediumspringgreen;
+        } */
+        li:nth-child(2n) {
+            color: red;
+        }
+        li:nth-child(2n+1) {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Headline</h1>
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <br>
+    <a target="_blank" href="https://www.google.co.in/"> Google</a>
+    <a target="_blank" href="https://www.youtube.com/">Youtube</a>
+    <a target="_blank" href="https://www.youtube.com/">Youtube</a>
+
+    <ul>
+        <li>Ram</li>
+        <li>Sam</li>
+        <li>Jam</li>
+        <li>Tam</li>
+        <li>Ram</li>
+    </ul>
+</body>
+
+</html>
