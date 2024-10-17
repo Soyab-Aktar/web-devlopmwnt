@@ -192,11 +192,6 @@ h2 {
     display: flex;
         /* background-color: black; */
 }
-
-.lastp {
-    /* background-image: url(/assets/foods.png); */
-}
-
 #final {
     display: flex;
     flex-direction: column;
