@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media_quary</title>
+    <style>
+        .contain {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .cart {
+            border: 2px solid mediumvioletred;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .cart img {
+            width: 100%;
+        }
+
+        /* Simple media quary */
+
+        /* Smaller Devices */
+        @media screen and (max-width: 576px) {
+
+            .contain {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        /* Medium Devices */
+        @media screen and (min-width:577px) and (max-width: 992px) {
+            .contain {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 1-> Use default Viewport meta tag -->
+    <!-- 2-> Use CSS relative unit -->
+    <!-- 3-> Set body max-width and horizontal center align -->
+    <!-- 4-> Image fluid -->
+
+    <!-- .contain>.cart*20>img[src="dp.webp"]+h3{Item no- $}+p{Price: \$$00}+p>lorem20 -->
+    <div class="contain">
+        <div class="cart">
+            <img src="dp.webp" alt="">
+            <h3>Item no- 1</h3>
+            <p>Price: $100</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In excepturi nemo molestiae veritatis odit,
+                enim ex culpa praesentium doloremque ducimus.</p>
+        </div>
+        <div class="cart">
+            <img src="dp.webp" alt="">
+            <h3>Item no- 2</h3>
+            <p>Price: $200</p>
+            <p>Consequuntur dicta et atque, architecto inventore magni, consectetur minima dolore iste sed in voluptas
+                nobis facilis. Doloribus perferendis aspernatur nihil.</p>
+        </div>
+        <div class="cart">
+            <img src="dp.webp" alt="">
+            <h3>Item no- 3</h3>
+            <p>Price: $300</p>
+            <p>Architecto quibusdam iure autem cupiditate labore molestiae accusamus dolore rem. Mollitia, aliquam
+                aliquid! Illum tempore quibusdam fugiat adipisci corrupti. Eum!</p>
+        </div>
+        <div class="cart">
+            <img src="dp.webp" alt="">
+            <h3>Item no- 4</h3>
+            <p>Price: $400</p>
+            <p>Pariatur placeat tempora nobis ratione nulla ea officia? Quaerat molestiae tenetur qui! Nam officiis
+                blanditiis sequi explicabo veritatis itaque obcaecati.</p>
+        </div>
+        <div class="cart">
+            <img src="dp.webp" alt="">
+            <h3>Item no- 5</h3>
+            <p>Price: $500</p>
+            <p>Ullam enim nam magnam! Ratione quasi non illo nesciunt, nemo a natus accusamus. Rerum, mollitia.
+                Accusamus eligendi minima doloremque ullam.</p>
+        </div>
+        <div class="cart">
+            <img src="dp.webp" alt="">
+            <h3>Item no- 6</h3>
+            <p>Price: $600</p>
+            <p>Impedit praesentium, nulla incidunt obcaecati animi quo cum magni ab atque esse sapiente expedita modi,
+                consequuntur at distinctio, quas vero.</p>
+        </div>
+        <div class="cart">
+            <img src="dp.webp" alt="">
+            <h3>Item no- 7</h3>
+            <p>Price: $700</p>
+            <p>Consequatur saepe nemo hic accusantium veritatis quibusdam earum, assumenda, illo quos ex totam possimus
+                animi mollitia necessitatibus impedit repellendus dolorum?</p>
+        </div>
+        <div class="cart">
+            <img src="dp.webp" alt="">
+            <h3>Item no- 8</h3>
+            <p>Price: $800</p>
+            <p>Culpa nulla quasi nihil quam dolorum? Ipsa quo dolor hic repellat eaque maiores eius unde eum in, amet
+                odio eligendi?</p>
+        </div>
+        <div class="cart">
+            <img src="dp.webp" alt="">
+            <h3>Item no- 9</h3>
+            <p>Price: $900</p>
+            <p>Est laborum quas corrupti eos dicta sint hic nesciunt veniam praesentium, aperiam laboriosam rem
+                expedita, suscipit modi! Quod, deserunt nisi!</p>
+        </div>
+        <div class="cart">
+            <img src="dp.webp" alt="">
+            <h3>Item no- 10</h3>
+            <p>Price: $1000</p>
+            <p>Quod quisquam ducimus totam in quos sequi sapiente est deleniti voluptas aspernatur, hic ullam non
+                magnam! Fugiat sunt voluptatem harum.</p>
+        </div>
+        <div class="cart">
+            <img src="dp.webp" alt="">
+            <h3>Item no- 11</h3>
+            <p>Price: $1100</p>
+            <p>Dignissimos qui nihil nisi fugit impedit saepe natus id soluta voluptates dolorem optio sapiente
+                inventore ducimus quo iusto, architecto earum?</p>
+        </div>
+        <div class="cart">
+            <img src="dp.webp" alt="">
+            <h3>Item no- 12</h3>
+            <p>Price: $1200</p>
+            <p>Hic deleniti, nisi aliquid, repellendus quas ipsam velit aspernatur, similique eaque possimus fugit quo!
+                Maxime, temporibus ea. Dicta, dolore non!</p>
+        </div>
+        <div class="cart">
+            <img src="dp.webp" alt="">
+            <h3>Item no- 13</h3>
+            <p>Price: $1300</p>
+            <p>Eius, odit facilis, consequuntur ratione soluta numquam explicabo enim quod quaerat quas animi distinctio
+                veritatis vero? Corrupti culpa odio aperiam.</p>
+        </div>
+        <div class="cart">
+            <img src="dp.webp" alt="">
+            <h3>Item no- 14</h3>
+            <p>Price: $1400</p>
+            <p>Est esse reprehenderit eum ipsum rem praesentium libero molestiae explicabo repudiandae aliquam quia
+                quasi perferendis, suscipit itaque, accusantium dolorem molestias!</p>
+        </div>
+        <div class="cart">
+            <img src="dp.webp" alt="">
+            <h3>Item no- 15</h3>
+            <p>Price: $1500</p>
+            <p>Sequi magnam eaque aperiam illo explicabo ad suscipit nobis quo quas perferendis! Esse nihil hic dolorem
+                aliquam labore eligendi ratione!</p>
+        </div>
+        <div class="cart">
+            <img src="dp.webp" alt="">
+            <h3>Item no- 16</h3>
+            <p>Price: $1600</p>
+            <p>Commodi quam culpa rem animi vero placeat blanditiis magnam consectetur reprehenderit modi nihil ab
+                nesciunt accusamus dolor, itaque aliquam voluptatem.</p>
+        </div>
+        <div class="cart">
+            <img src="dp.webp" alt="">
+            <h3>Item no- 17</h3>
+            <p>Price: $1700</p>
+            <p>Id quis ea numquam reiciendis totam, commodi sed dolor quibusdam, asperiores amet est nisi quo omnis rem
+                provident suscipit debitis.</p>
+        </div>
+        <div class="cart">
+            <img src="dp.webp" alt="">
+            <h3>Item no- 18</h3>
+            <p>Price: $1800</p>
+            <p>Quod ratione laborum nobis. Voluptates beatae accusamus fuga error eveniet inventore iusto asperiores
+                rerum officiis dignissimos aliquid autem, voluptatum excepturi?</p>
+        </div>
+        <div class="cart">
+            <img src="dp.webp" alt="">
+            <h3>Item no- 19</h3>
+            <p>Price: $1900</p>
+            <p>At culpa iure labore perferendis! Fugiat necessitatibus, consequuntur maiores iusto harum quae impedit
+                autem? Fugit quam laudantium temporibus. Voluptatem, consequatur.</p>
+        </div>
+        <div class="cart">
+            <img src="dp.webp" alt="">
+            <h3>Item no- 20</h3>
+            <p>Price: $2000</p>
+            <p>Dolorum ipsum animi beatae dolorem quam eos et, illo hic consequuntur repellendus architecto, nostrum nam
+                reprehenderit officiis tempore sed ex.</p>
+        </div>
+    </div>
+</body>
+
+</html>
