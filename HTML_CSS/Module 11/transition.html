@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .box {
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            border: 2px solid red;
+            background-color: cornflowerblue;
+            transition: width 1s, background-color 2s, transform .5s, height 1s;
+        }
+
+        .box:hover {
+            transform: rotate(90deg);
+            width: 400px;
+            height: 400px;
+            background-color: rgb(84, 241, 160);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">Box- 1</div>
+    <div class="box">Box- 2</div>
+    <div class="box">Box- 3</div>
+</body>
+
+</html>
