@@ -10,4 +10,5 @@ const numbers = [4, 5, 2, 8, 10];
 const result = numbers.find(num => num>5);
 const result2 = numbers.filter(num => num>5);
 console.log(result);
+crossOriginIsolated.log(12,65,34)
 console.log(result2);
