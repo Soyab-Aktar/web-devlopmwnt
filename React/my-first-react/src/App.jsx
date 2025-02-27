@@ -26,9 +26,23 @@ function App() {
         </p>
       </div>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        Hello Friends
       </p>
+      <Person></Person>
+      <Country></Country>
     </>
+  )
+}
+function Person (){
+  return <h1 className='person'>Soyab Aktar {34}</h1>
+}
+function Country(){
+  const countryCss = {
+    color : `cyan`,
+    margin : `12px`
+  }
+  return (
+    <h3 style={countryCss}>My Country is INDIA</h3>
   )
 }
 
