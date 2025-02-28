@@ -2,34 +2,40 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Todo from './todo'
+import Actor from './Actor'
+import Gpu from './Gpu'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const device = ['Mobile','PC','Laptop','SmartWatch'];
+  const gpu = [
+    {name:'RTX 5090', company:'Nvidia'},
+    {name:'RX 7090', company:'AMD'},
+    {name:'Arc 580', company:'Intel'},
+    {name:'RTX Quadro T6000', company:'Nvidia'}
+    
+  ]
+
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Hello Friends
-      </p>
       <Person></Person>
-      <Country></Country>
+      <Actor name={"Soyab"}></Actor>
+      {
+        device.map(device =><Actor name={device}></Actor> )
+      }
+      {
+        gpu.map(gpu=><Gpu ></Gpu>)
+      }
+      {/* <Country></Country> */}
+      {/* <Student></Student> */}
+      {/* <Device name="Laptop" price="55k"></Device>
+      <Device name="Mobile" price="20k"></Device>
+      <Device name="PC" price="1.2L"></Device>
+      <StudentData></StudentData> */}
+      {/* <Todo task='Learn React' isDone={true}></Todo>
+      <Todo task='Now Learnig JSX' isDone={false}></Todo> */}
     </>
   )
 }
@@ -43,6 +49,33 @@ function Country(){
   }
   return (
     <h3 style={countryCss}>My Country is INDIA</h3>
+  )
+}
+function Student(){
+  const name = "Soyab Aktar";
+  const rollNumber = 21;
+  const course = "BCA";
+
+  return (
+    <h2 className='person'>My Name is {name}, My roll number is {rollNumber}, I am in {course} course.</h2>
+  )
+}
+
+// Props
+function Device(props) {
+  console.log(props);
+  return(
+    <h4>This Device: {props.name}, Price:{props.price}</h4>
+  )
+}
+
+const {nameSudent,score} = {nameSudent: "Soyab Aktar" , score:"A+"};
+function StudentData(){
+  return(
+    <div className='person'>
+      <p>Name: {nameSudent}</p>
+      <p>Score: {score}</p>
+    </div>
   )
 }
 
