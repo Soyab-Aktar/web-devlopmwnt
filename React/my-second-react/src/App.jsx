@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Counter from './Count'
+import Users from './user'
+import Friends from './Friends'
 
 //! Event Handler
 function App() {
@@ -21,7 +23,7 @@ function App() {
   return (
     <>
       <h2>React Concept</h2>
-
+      <Users></Users>
       <Counter></Counter>
       
       {/* Using Normal Function */}
@@ -32,6 +34,7 @@ function App() {
       <button onClick={() => {alert('Third Times Clicked')}}>Click 3</button>
       {/* Using Function With Parameter */}
       <button onClick={() => addToFive(5)}>Click 4</button>
+      <Friends></Friends>
     </>
   )
 }
