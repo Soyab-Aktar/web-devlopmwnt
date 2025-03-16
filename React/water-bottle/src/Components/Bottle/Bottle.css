@@ -1,0 +1,18 @@
+.bottle{
+    border: 2px solid mediumaquamarine;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottle img {
+    width: 300px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.bottle button{
+    background-color: aquamarine;
+    color: black;
+}
