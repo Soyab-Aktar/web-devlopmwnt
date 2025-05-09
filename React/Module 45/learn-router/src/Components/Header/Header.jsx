@@ -1,22 +1,50 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <div>
       <nav>Navbar</nav>
       <div className="flex justify-between gap-4">
-        <Link className="bg-cyan-300 p-4 rounded-md" to="/">
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            `p-4 rounded-md ${isActive ? "bg-red-500" : "bg-cyan-300"}`
+          }
+        >
           Home
-        </Link>
-        <Link className="bg-cyan-300 p-4 rounded-md" to="/users">
+        </NavLink>
+        <NavLink
+          to="/users"
+          className={({ isActive }) =>
+            `p-4 rounded-md ${isActive ? "bg-red-500" : "bg-cyan-300"}`
+          }
+        >
           Users
-        </Link>
-        <Link className="bg-cyan-300 p-4 rounded-md" to="/about">
+        </NavLink>
+        <NavLink
+          to="/posts"
+          className={({ isActive }) =>
+            `p-4 rounded-md ${isActive ? "bg-red-500" : "bg-cyan-300"}`
+          }
+        >
+          Posts
+        </NavLink>
+        <NavLink
+          to="/about"
+          className={({ isActive }) =>
+            `p-4 rounded-md ${isActive ? "bg-red-500" : "bg-cyan-300"}`
+          }
+        >
           About
-        </Link>
-        <Link className="bg-cyan-300 p-4 rounded-md" to="/contact">
+        </NavLink>
+        <NavLink
+          to="/contact"
+          className={({ isActive }) =>
+            `p-4 rounded-md ${isActive ? "bg-red-500" : "bg-cyan-300"}`
+          }
+        >
           Contact
-        </Link>
+        </NavLink>
       </div>
     </div>
   );

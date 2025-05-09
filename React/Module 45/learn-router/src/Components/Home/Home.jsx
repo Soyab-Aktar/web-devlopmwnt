@@ -1,12 +1,16 @@
-import { Outlet } from "react-router";
+import { Outlet, useLocation, useNavigation } from "react-router-dom";
 import Header from "../Header/Header";
 
 const Home = () => {
+  const navigation = useNavigation();
+  const location = useLocation();
+
+  console.log("Current route:", location.pathname);
+
   return (
     <div>
-      <Header></Header>
-      <h2>This the home components</h2>
-      <Outlet></Outlet>
+      <Header />
+      {navigation.state === "loading" ? <p>Loading .....</p> : <Outlet />}
     </div>
   );
 };
