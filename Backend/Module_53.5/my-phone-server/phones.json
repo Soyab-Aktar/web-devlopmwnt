@@ -1,0 +1,87 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 15 Pro",
+    "brand": "Apple",
+    "price": 999,
+    "storage": "256GB",
+    "ram": "8GB",
+    "display": "6.1-inch Super Retina XDR",
+    "battery": "3274mAh",
+    "os": "iOS 17",
+    "camera": {
+      "rear": "48MP + 12MP + 12MP",
+      "front": "12MP"
+    },
+    "colors": ["Black Titanium", "White Titanium", "Blue Titanium", "Natural Titanium"],
+    "rating": 4.8
+  },
+  {
+    "id": 2,
+    "name": "Samsung Galaxy S24 Ultra",
+    "brand": "Samsung",
+    "price": 1199,
+    "storage": "512GB",
+    "ram": "12GB",
+    "display": "6.8-inch QHD+ AMOLED 120Hz",
+    "battery": "5000mAh",
+    "os": "Android 14 (One UI 6)",
+    "camera": {
+      "rear": "200MP + 12MP + 10MP + 10MP",
+      "front": "12MP"
+    },
+    "colors": ["Titanium Gray", "Titanium Black", "Titanium Violet"],
+    "rating": 4.9
+  },
+  {
+    "id": 3,
+    "name": "Google Pixel 8 Pro",
+    "brand": "Google",
+    "price": 999,
+    "storage": "256GB",
+    "ram": "12GB",
+    "display": "6.7-inch LTPO OLED 120Hz",
+    "battery": "5050mAh",
+    "os": "Android 14",
+    "camera": {
+      "rear": "50MP + 48MP + 48MP",
+      "front": "10.5MP"
+    },
+    "colors": ["Obsidian", "Porcelain", "Bay"],
+    "rating": 4.7
+  },
+  {
+    "id": 4,
+    "name": "OnePlus 12",
+    "brand": "OnePlus",
+    "price": 799,
+    "storage": "256GB",
+    "ram": "16GB",
+    "display": "6.82-inch AMOLED 120Hz",
+    "battery": "5400mAh",
+    "os": "Android 14 (OxygenOS)",
+    "camera": {
+      "rear": "50MP + 64MP + 48MP",
+      "front": "32MP"
+    },
+    "colors": ["Flowy Emerald", "Silky Black"],
+    "rating": 4.6
+  },
+  {
+    "id": 5,
+    "name": "Nothing Phone (2)",
+    "brand": "Nothing",
+    "price": 699,
+    "storage": "256GB",
+    "ram": "12GB",
+    "display": "6.7-inch OLED 120Hz",
+    "battery": "4700mAh",
+    "os": "Android 14 (Nothing OS)",
+    "camera": {
+      "rear": "50MP + 50MP",
+      "front": "32MP"
+    },
+    "colors": ["White", "Dark Gray"],
+    "rating": 4.5
+  }
+]
