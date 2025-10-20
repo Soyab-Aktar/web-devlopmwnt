@@ -32,6 +32,13 @@ async function run() {
       const result = await cursor.toArray();
       res.send(result);
     })
+    app.get('/users/:id',async(req,res) =>{
+      const id = req.params.id;
+      const query = { _id : new ObjectId(id)};
+      const user =await usersCollection.findOne(query);
+
+      res.send(user);
+    })
     app.post('/users',async(req,res) =>{
       const user = req.body;
       console.log("New user :",user);
@@ -43,6 +50,21 @@ async function run() {
       console.log(id);
       const query = {_id: new ObjectId(id)};
       const result = await usersCollection.deleteOne(query);
+      res.send(result);
+    })
+    app.put('/users/:id',async (req,res) =>{
+      const id = req.params.id;
+      const user = req.body;
+      console.log(user);
+      const filter = {_id: new ObjectId(id)};
+      const option = {upsert: true};
+      const updatedUser = {
+        $set: {
+          name: user.name,
+          email: user.email
+        }
+      }
+      const result = await usersCollection.updateOne(filter, updatedUser, option);
       res.send(result);
     })
 
